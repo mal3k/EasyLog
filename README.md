@@ -1,3 +1,6 @@
 # EasyLog
 
-A description of this package.
+A lightweight library to help log with verbose informations.
+
+Example:
+
