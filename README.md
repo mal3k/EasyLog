@@ -1,6 +1,6 @@
 # EasyLog
 
-A lightweight library to help logging events verbosely :)
+A lightweight library to help logging events in a clean and better way :)
 
 Example: 
 
