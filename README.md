@@ -4,7 +4,9 @@ A lightweight library to help logging events verbosely :)
 
 Example: 
 
+```
 [2021-04-22 13:16:55] [ViewController.swift] ⎯ [Line 17] ⎯ viewDidLoad() 💚 ⎯ Log me
+```
 
 Currently, the library logs the following informations:
 
