@@ -1,21 +1,26 @@
 import XCTest
-import EasyLog
+@testable import EasyLog
 
 final class EasyLogTests: XCTestCase {
-    let logger: Logger!
-    override func setUpWithError() throws {
-        logger = Logger()
-    }
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertNotNil(logger)
-    }
-    override func tearDownWithError() throws {
-        logger = nil
-    }
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+  
+  // MARK: - Properties
+  
+  var logger: Logger!
+  
+  override func setUpWithError() throws {
+    logger = Logger()
+  }
+  
+  override func tearDownWithError() throws {
+    logger = nil
+  }
+  
+  func testLogger_WhenInitiated_IsNotNil() {
+    XCTAssertNotNil(logger)
+    XCTAssertNotNil(logger.dateFormatter)
+  }
+  
+  static var allTests = [
+    ("testExample", testLogger_WhenInitiated_IsNotNil),
+  ]
 }
